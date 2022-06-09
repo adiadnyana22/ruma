@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #C69B7B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+/* Utils */
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.header-logo strong {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.25em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    font-size: 1.1em;
+}
+
+.header-btn a {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: .5rem;
+    padding: .75rem 2rem;
+    display: block;
+}
+
+/* Login */
+.bg-login {
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10rem;
+}
+
+.bg-login h1 {
+    font-size: 4em;
+}
+
+.bg-login form input[type="email"], .bg-login form input[type="password"] {
+    border: 1px solid var(--primary-color);
+    padding: .75rem 1.5rem;
+}
+
+.bg-login form input[type="checkbox"] {
+    border: 2px solid var(--primary-color);
+}
+
+.login-btn {
+    display: block;
+    padding: .75rem 0;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    font-weight: bold;
+}
+
+.login-btn-google {
+    margin-top: 1rem;
+    border: 1px solid var(--primary-color);
+    display: block;
+    width: 100%;
+    border-radius: .5rem;
+    padding: .75rem 0;
+    background-color: #fff;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-btn-google img {
+    height: 1.25rem;
+}
+
+/* Done Transaction */
+.bg-done {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10rem;
+}
+
+.done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.done img {
+    width: 400px;
+    margin-bottom: 2rem;
+}
+
+.done a {
+    background-color: var(--primary-color);
+    padding: .75rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
